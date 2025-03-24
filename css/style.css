@@ -5,12 +5,23 @@ body {
   align-items: center;
   height: 100vh;
   background: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
-#startScreen {
+#startScreen, #gameContainer {
   text-align: center;
 }
 canvas {
   border: 1px solid #000;
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 80vh;
+}
+#ui {
+  margin-top: 10px;
+}
+#restartBtn {
+  padding: 5px 10px;
+  font-size: 16px;
+}
+#leaderboard {
+  margin-top: 10px;
 }

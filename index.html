@@ -4,14 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Maze Game</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div id="startScreen">
     <h1>AI Maze Game</h1>
     <button onclick="startGame()">Start</button>
   </div>
-  <canvas id="gameCanvas" style="display: none;"></canvas>
-  <script src="game.js"></script>
+  <div id="gameContainer" style="display: none;">
+    <canvas id="gameCanvas"></canvas>
+    <div id="ui">
+      <span id="timer">Time: 0s</span>
+      <button id="restartBtn" style="display: none;">Restart</button>
+      <div id="leaderboard">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboardList"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="js/maze.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/ui.js"></script>
 </body>
 </html>
